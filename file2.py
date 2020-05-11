@@ -19,13 +19,13 @@ img = cv2.cvtColor(imgc, cv2.COLOR_BGR2GRAY)
 
 crop_img = img[280:280+110,172:172+88]
 
-cv2.imshow('Coverted Image',img)
+cv2.imshow('Coverted Image',crop_img)
 cv2.waitKey(0)
 plt.axis("on")
 
 L = plt.hist(crop_img.ravel(),256,[0,256])[0]
 print(L,"  ",len(L))
-#plt.show()
+plt.show()
 
 height, width = crop_img.shape
 size = height * width
@@ -48,6 +48,8 @@ cv2.imshow('Cted Image',img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
+plt.hist(img.ravel(),256,[0,256])[0]
+plt.show()
 
 
 

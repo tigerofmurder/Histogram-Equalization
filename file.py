@@ -13,7 +13,7 @@ def Pn(L,size,pn):
 	for x in L:
 	        pn.append(x/size)
 
-imgc= cv2.imread('hist5.jpg')
+imgc= cv2.imread('hist6.jpg')
 img = cv2.cvtColor(imgc, cv2.COLOR_BGR2GRAY)
 
 cv2.imshow('Coverted Image',img)
